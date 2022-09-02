@@ -82,3 +82,19 @@ footer {
     color: white;
 }
 
+
+  
+  .texto-centrado {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 40px;
+  }
+
+ 
+  @import "Nosotros.scss";
+  @import "Servicios.scss";
+  @import "Contacto.scss";
+  @import "variables.scss";
+  @import "Clientes.scss";
