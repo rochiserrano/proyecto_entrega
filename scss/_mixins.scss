@@ -1,0 +1,30 @@
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@mixin background-query ($background,$vista) {
+    body {
+            @if vista == escritorio {
+                
+                    background-color: $background;
+                }
+            
+            @else if vista == tableta {
+               
+                    background-color: $background;
+                }
+            
+            @else if vista == telefono {
+               
+                    background-color: $background;
+            }
+            
+            
+            @else {
+                background-color: $background;
+            }
+ }
+}

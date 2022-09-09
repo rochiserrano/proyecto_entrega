@@ -1,12 +1,53 @@
+@import "mixins.scss";
+
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    @include reset;
 }
 
-                                        /* CARDS */
+@media (max-width: 1400px) {
+    @include background-query(#fff,otro)    
+}
+@media (max-width: 1200px) {
+    @include background-query(blue,computadora)    
+}       
+@media (max-width: 768px) {
+    @include background-query(green,tableta)
+}   
+@media (max-width: 576px) {
+    @include background-query(red,telefono)
+}   
 
-            
+
+/* CARDS */
+
+/* clase para extend */
+
+.centro-blanco {
+    align-items: center;
+    color:white;
+}
+
+
+/* Mapa */
+
+$mapa: ( 
+    tono1: #F5F5F5,
+    tono2: #E4E4E4,
+    tono3: #BFBFBF,
+    tono4: #A7A7A7,
+    tono5: #868686,
+    tono6: #9C9C9C,
+);
+@each $fondo, $color in $mapa {
+    .mapadegrises--#{$fondo} {
+        color: $color;
+    }
+    
+}
+
+
+
 main  {
     h1 {
     text-align: center;    
@@ -29,16 +70,15 @@ main  {
                 display: inline-block;
                 align-items: center;
                 a.btn {
-                    align-items: center;
+                    @extend .centro-blanco;
                     background-color: #2C7AAE;
                     border-color: #2C7AAE;
-                    color:white;
                     transition: all 0.2s ease-out;
+                    
                 }
                 a.btn:hover {
-                    align-items: center;
+                    @extend .centro-blanco;
                     background-color: #4d7d9f;
-                    color:white;
                     border-color: #4d7d9f;
                     transform: scale(0.8);
                 }
@@ -50,6 +90,16 @@ main  {
 
 
                                         /* FOOTER */
+
+/* clase para extend */
+
+.redes {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+}                                        
 
  footer {
     width: 100%;
@@ -64,23 +114,17 @@ main  {
                 display: inline-block;
                  a {
                     i.bi-facebook {
-                        font-size: 30px;
-                        text-align: center;
-                        margin-left: 5px;
-                        margin-right: 5px;
-                        color: white;
+                        @extend .redes;
                     }
                     i.bi-instagram {
-                        font-size: 30px;
-                        text-align: center;
-                        margin-left: 5px;
-                        margin-right: 5px;
-                        color: white;
+                        @extend .redes;
                     }
                  }
                 }
             }
  }                                       
+
+
 
  
   @import "Nosotros.scss";
