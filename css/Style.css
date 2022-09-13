@@ -52,6 +52,10 @@ main div div {
   align-items: center; }
   main div div h5 {
     text-align: center; }
+  main div div h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center; }
   main div div p {
     text-align: center; }
     main div div p img {
