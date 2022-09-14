@@ -2,3 +2,29 @@ form.formu {
     margin-left: 35%;
     margin-top: 3rem;
 }
+
+div.contact {
+
+    article {
+        padding: 10px;
+        }
+        p {
+            text-align: center;
+             img {
+            height: 350px;
+            width: 500px;
+            border-radius: 20px;
+                 }
+            @media (max-width: 500px) {
+                img {
+                      width:100%
+                    }
+                 }  
+        }
+    
+        article.izq {
+            padding-left: 5%; 
+            padding-right: 5%;
+                    }
+
+    }

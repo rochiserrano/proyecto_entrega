@@ -15,10 +15,26 @@ nav.nav-azul {
 
 main {
     p.texto-centrado {
-        font-size: 16px;
-        font-weight: 600;
+        font-size: 18px;
+        font-weight: 400;
         margin-left: 20%;
         margin-right: 20%;
         margin-bottom: 40px;
+        color:#000;
+        text-align: justify;
+                        }
+    p {
+        text-align: center;
+        img {
+            height: 350px;
+            width: 500px;
+            border-radius: 20px;  
+            margin-bottom: 3%;  
+            }   
+        @media (max-width: 500px) {
+                img {
+                  width:100%
+                }
+              }            
+      }
     }
-}

@@ -1,22 +1,10 @@
-@import "mixins.scss";
-
 
 * {
-    @include reset;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
 }
 
-@media (max-width: 1400px) {
-    @include background-query(#fff,otro)    
-}
-@media (max-width: 1200px) {
-    @include background-query(blue,computadora)    
-}       
-@media (max-width: 768px) {
-    @include background-query(green,tableta)
-}   
-@media (max-width: 576px) {
-    @include background-query(red,telefono)
-}   
 
 
 /* CARDS */
@@ -29,22 +17,6 @@
 }
 
 
-/* Mapa */
-
-$mapa: ( 
-    tono1: #F5F5F5,
-    tono2: #E4E4E4,
-    tono3: #BFBFBF,
-    tono4: #A7A7A7,
-    tono5: #868686,
-    tono6: #9C9C9C,
-);
-@each $fondo, $color in $mapa {
-    .mapadegrises--#{$fondo} {
-        color: $color;
-    }
-    
-}
 
 
 
@@ -68,7 +40,8 @@ main  {
                 text-align: center;
                 img {
                     width: 12rem;
-                    height: 12rem; 
+                    height: 12rem;
+                    margin-top: 10px;
                 }
             }
             div {
@@ -108,7 +81,7 @@ main  {
 
  footer {
     width: 100%;
-    background-image: linear-gradient(to top, #093a5b, white);
+    background-image: linear-gradient(to top, #093a5b, #2C7AAE);
     height: 100px;
     margin-top: 0px;
     display: flex;

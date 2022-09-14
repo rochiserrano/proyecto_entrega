@@ -3,46 +3,11 @@
   padding: 0;
   box-sizing: border-box; }
 
-@media (max-width: 1400px) {
-  body {
-    background-color: #fff; } }
-
-@media (max-width: 1200px) {
-  body {
-    background-color: blue; } }
-
-@media (max-width: 768px) {
-  body {
-    background-color: green; } }
-
-@media (max-width: 576px) {
-  body {
-    background-color: red; } }
-
 /* CARDS */
 /* clase para extend */
 .centro-blanco, main div div div a.btn, main div div div a.btn:hover {
   align-items: center;
   color: white; }
-
-/* Mapa */
-.mapadegrises--tono1 {
-  color: #F5F5F5; }
-
-.mapadegrises--tono2 {
-  color: #E4E4E4; }
-
-.mapadegrises--tono3 {
-  color: #BFBFBF; }
-
-.mapadegrises--tono4 {
-  color: #A7A7A7; }
-
-.mapadegrises--tono5 {
-  color: #868686; }
-
-.mapadegrises--tono6 {
-  color: #9C9C9C; }
 
 main h1 {
   text-align: center; }
@@ -60,7 +25,8 @@ main div div {
     text-align: center; }
     main div div p img {
       width: 12rem;
-      height: 12rem; }
+      height: 12rem;
+      margin-top: 10px; }
   main div div div {
     display: inline-block;
     align-items: center; }
@@ -84,7 +50,7 @@ main div div {
 
 footer {
   width: 100%;
-  background-image: linear-gradient(to top, #093a5b, white);
+  background-image: linear-gradient(to top, #093a5b, #2C7AAE);
   height: 100px;
   margin-top: 0px;
   display: flex;
@@ -100,12 +66,42 @@ nav.nav-azul {
     color: white; }
 
 main p.texto-centrado {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
   margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  color: #000;
+  text-align: justify; }
+
+main p {
+  text-align: center; }
+  main p img {
+    height: 350px;
+    width: 500px;
+    border-radius: 20px;
+    margin-bottom: 3%; }
+  @media (max-width: 500px) {
+    main p img {
+      width: 100%; } }
 
 form.formu {
   margin-left: 35%;
   margin-top: 3rem; }
+
+div.contact article {
+  padding: 10px; }
+
+div.contact p {
+  text-align: center; }
+  div.contact p img {
+    height: 350px;
+    width: 500px;
+    border-radius: 20px; }
+  @media (max-width: 500px) {
+    div.contact p img {
+      width: 100%; } }
+
+div.contact article.izq {
+  padding-left: 5%;
+  padding-right: 5%; }
