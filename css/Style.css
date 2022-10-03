@@ -89,19 +89,19 @@ form.formu {
   margin-left: 35%;
   margin-top: 3rem; }
 
-div.contact article {
-  padding: 10px; }
-
-div.contact p {
-  text-align: center; }
-  div.contact p img {
-    height: 350px;
-    width: 500px;
-    border-radius: 20px; }
-  @media (max-width: 500px) {
+div.contact {
+  overflow-x: hidden; }
+  div.contact article {
+    padding: 10px; }
+  div.contact p {
+    text-align: center; }
     div.contact p img {
-      width: 100%; } }
-
-div.contact article.izq {
-  padding-left: 5%;
-  padding-right: 5%; }
+      height: 350px;
+      width: 500px;
+      border-radius: 20px; }
+    @media (max-width: 500px) {
+      div.contact p img {
+        width: 100%; } }
+  div.contact article.izq {
+    padding-left: 5%;
+    padding-right: 5%; }
